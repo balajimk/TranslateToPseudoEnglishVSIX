@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="TranslateToPseudoEnglish">
+    <Groups>
+      <Group guid="TranslateToPseudoEnglish" id="ArcoMenuGroup" priority="0x0600">
+        <Parent guid="VSMainMenu" id="Edit"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="TranslateToPseudoEnglish" id="TranslateToPseudoEnglishCommand" priority="0x0100" type="Button">
+        <Parent guid="TranslateToPseudoEnglish" id="ArcoMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="Translate" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Translate to Pseudo-English</ButtonText>
+          <LocCanonicalName>.Edit.TranslateToPseudoEnglishCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="TranslateToPseudoEnglish" value="{62f8c62f-75b6-48d9-92a8-b5c85048ea97}">
+      <IDSymbol name="ArcoMenuGroup" value="0x0001" />
+      <IDSymbol name="TranslateToPseudoEnglishCommand" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
