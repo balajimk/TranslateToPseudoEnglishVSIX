@@ -6,3 +6,8 @@ This Visual Studio Extension will translate any selected English text in Visual 
 - Select any text in the editor
 - In Edit menu, click "Translate to Pseudo-English"
 - Alternatively, you can add the item in context menu and use it by right clicking any text and Translate.
+
+# Exceptions
+Translate will retain the following items intact:
+- GUIDs.
+- HTML Tags.
