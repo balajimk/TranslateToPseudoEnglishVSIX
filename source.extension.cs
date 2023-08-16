@@ -12,7 +12,7 @@ namespace TranslateToPseudoEnglish
         public const string Description = @"Instantly translate English to Pseudo-English of any selected text.";
         public const string Language = "en-US";
         public const string Version = "1.0.1";
-        public const string Author = "Balaji Mannar Kala";
+        public const string Author = "Balaji M Kala";
         public const string Tags = "";
     }
 }
